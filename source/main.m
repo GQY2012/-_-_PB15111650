@@ -1,0 +1,48 @@
+load( 'C:\Users\95850\Desktop\实验二\dataset\football.mat' );
+C = alinkjaccard( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\football_alinkjaccard.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = girvannewman( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\football_girvannewman.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = rcut( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\football_rcut.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = ncut( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\football_ncut.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = modularity( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\football_modularity.txt', C, 'precision', '%d', 'newline', 'pc' );
+
+load( 'C:\Users\95850\Desktop\实验二\dataset\polbooks.mat' );
+C = alinkjaccard( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\polbooks_alinkjaccard.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = girvannewman( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\polbooks_girvannewman.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = rcut( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\polbooks_rcut.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = ncut( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\polbooks_ncut.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = modularity( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\polbooks_modularity.txt', C, 'precision', '%d', 'newline', 'pc' );
+
+load( 'C:\Users\95850\Desktop\实验二\dataset\DBLP.mat' );
+C = alinkjaccard( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\DBLP_alinkjaccard.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = girvannewman( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\DBLP_girvannewman.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = rcut( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\DBLP_rcut.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = ncut( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\DBLP_ncut.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = modularity( A, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\DBLP_modularity.txt', C, 'precision', '%d', 'newline', 'pc' );
+
+load( 'C:\Users\95850\Desktop\实验二\dataset\Egonet.mat' );
+k = 15;
+C = alinkjaccard( x, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\Egonet_alinkjaccard.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = girvannewman( x, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\Egonet_girvannewman.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = rcut( x, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\Egonet_rcut.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = ncut( x, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\Egonet_ncut.txt', C, 'precision', '%d', 'newline', 'pc' );
+C = modularity( x, k );
+dlmwrite( 'C:\Users\95850\Desktop\实验二\output\Egonet_modularity.txt', C, 'precision', '%d', 'newline', 'pc' );
